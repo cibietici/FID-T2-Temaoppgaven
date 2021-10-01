@@ -1,0 +1,47 @@
+body {
+    background-color: #ffff33;
+    color: #000000;
+    font-size: 36px;
+}
+
+div p { /* specificity 1 + 1 */
+    color: rgb(99, 145, 43);
+    font-size: 34px;
+}
+
+p {
+    color: rgb(164, 7, 140);
+    font-size: 34px;
+}
+
+.main-box {
+    width: 300px;
+    height: 300px;
+}
+
+.my-box {
+    background-color: springgreen;
+}
+
+.my-second-box {
+    background-color: tomato;
+}
+
+ul li {
+    color: blue;
+}
+
+.wrapper {
+    width: 100%;
+    height: 600px;
+    background-color: darkgreen;
+    position: relative;
+}
+
+.box-inside {
+    width: 100%;
+    height: 100px;
+    background-color: fuchsia;
+    position: sticky;
+    top: 0;
+}
