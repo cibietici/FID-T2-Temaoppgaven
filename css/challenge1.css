@@ -1,0 +1,44 @@
+.box-top {
+    background-color: red;
+    height: 300px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.box-middle {
+    background-color: darkblue;
+    height: 200px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.box-bottom {
+    background-color:darkkhaki;
+    height: 250px;
+    position: relative;
+}
+
+.box-in {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+}
+
+.box-top-in {
+    background-color: gold;
+    left: 50%;
+    margin-left: -60px;
+    bottom: 0;
+}
+
+.box-middle-in {
+    background-color: lightskyblue;
+    left: 50%;
+    top: 30px;
+}
+
+.box-bottom-in {
+    background-color: orange;
+    left: 50%;
+    bottom: 0;
+}
