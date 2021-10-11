@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform og transition / Keyframs</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gainsboro;
+        }
+
+        svg {
+            width: 60px;
+            display: block;
+            transition-duration: 0.4s;
+        }
+        svg:hover {
+            transform: scale(2.4);
+        }
+
+        button {
+            width: 400px;
+            height: 80px;
+            display: block;
+            color: #ffffff;
+            background-color:midnightblue;
+            font-size: 24px;
+            border: none;
+            border-radius: 40px;
+            box-shadow: -1px -1px 25px 3px #000000;
+            animation-name: animated;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.2s;
+        }
+
+        
+        @keyframes animated {
+            from {
+                background-color:maroon;
+                width: 400px;
+            }
+
+            30% {
+                background-color:navajowhite;
+                width: 600px;
+            }
+
+            70% {
+                background-color: slateblue;
+                width: 800px;
+                transform: scale(1.4);
+            }
+
+            to {
+                background-color:midnightblue;
+                width: 400px;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <!-- 
+            <button>Click me</button>
+        -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+        <path d="M147.054,91.591l91.591,89.228H1.45v128.362h237.194l-91.591,89.228L237.03,490l251.52-245L237.03,0L147.054,91.591z
+            M444.646,245L237.508,446.784l-47.059-47.896l123.532-120.332H32.075v-67.112h281.906L190.449,91.112l47.059-47.896L444.646,245z"
+            />
+        </svg>
+    </div>
+</body>
+</html>

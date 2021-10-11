@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+@font-face {
+	font-family: 'UTMNeutra';
+	src: url('../assets/fonts/UTMNeutra.woff');
+    font-weight: normal; /*optional*/
+    font-style: normal; /*optional*/
+}
+
 body {
     background-color: #ffff33;
     color: #000000;
@@ -38,6 +47,7 @@ footer {
 }
 
 h1 {
+    font-family: 'UTMNeutra', sans-serif;
     font-size: 2.8rem;
 }
 
