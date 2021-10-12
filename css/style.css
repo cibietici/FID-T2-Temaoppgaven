@@ -32,6 +32,14 @@ nav {
     height: 50px;
 }
 
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+   display: inline-block; 
+}
+
 main {
     padding: 40px;
     margin: 0 auto;
