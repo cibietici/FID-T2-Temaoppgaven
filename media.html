@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <link rel='stylesheet'  href='./css/desktop.css' />  
+    <!--<link rel='stylesheet' media='screen and (max-width: 700px)' href='./css/mobile.css' />-->
+    <title>Media i link og mediaqueries i stylesheet</title>
+
+    <style>
+        p {
+          background-color: blue;
+          color: white;
+          padding: 20px;
+        }
+    </style>
+    
+    <style media="screen and (min-width: 500px) and (max-width: 650px)">
+      p {
+        background-color: yellow;
+        color: blue;
+      }
+    </style>
+</head>
+<body>
+    <header>this is my header</header>
+    <h1>Test media query</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Pariatur nostrum accusamus, magnam dolore repellat natus vitae dolores doloremque a libero.
+    </p>
+</body>
+</html>

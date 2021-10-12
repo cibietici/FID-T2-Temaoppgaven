@@ -1,0 +1,62 @@
+
+/* dette kan brukes for importere spesifikk style for spesifikk media for eksempel print 
+vedlikeholde kan be utfordrende, unngå å gjøre det */
+@import url("./css/print.css") print;
+
+header {
+    display: block;
+    background-color: blanchedalmond;
+    color: #000;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    background-color: #F0F;
+    color: #fff;
+    padding: 20px;
+}
+
+@media screen and (min-width:768px) {
+    h1 {
+        background-color: #F00;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h1 {
+        background-color: #00f;
+    }
+}
+
+
+@media print {
+    header {
+        display: none;
+    }
+    h1 {
+        color: #000;
+    }
+}
+
+@media (orientation: landscape) { /* portrait */
+    /* rules for landscape versjonen */
+}
+
+@media screen and (prefers-reduced-motion: reduce) {  
+    * {
+        /* med disse følgende linjer alle animasjoner er redusert for brukerne som har 
+        problemer med bevegelser på skjermer, og de har redusert hastighet av bevegelse i OS nivå, med vilje */
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
+@media (prefers-contrast: high) {
+    /* her endrer vi regler for brukerne som instilt pc med høy kontrast*/
+}
+
+@media screen and (prefers-color-scheme: light) {
+    /* vi kan også styre regler for de som valgt dark eller light mode */
+}

@@ -1,0 +1,22 @@
+h1 {
+    font-size: 48px;
+    background-color: #f00;
+    color: #000;
+}
+/*
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 48px;
+        background-color: #F00;
+        color: #000;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 48px;
+        background-color: #00f;
+        color: #fff;
+    }
+}
+*/

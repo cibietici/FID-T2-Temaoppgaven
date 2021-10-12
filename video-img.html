@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Img og video</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .wrapper {
+            width: 100vw;
+            height: 100vh;
+            /*background-image: url('./assets/xps-1gLdTsX3_70.jpg');*/
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .claim {
+            position: absolute;
+            bottom: 80px;
+            left: 40px;
+            font-size: 64px;
+            color: #fff;
+            z-index: 5;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .fade {
+            width: 100vw;
+            height: 100vh;
+            z-index: 3;
+            background: 
+                linear-gradient(
+                    to top, rgba(0,0,0,0.65) 0%,
+                    rgba(0,0,0,0.18) 24%,
+                    rgba(0,0,0,0) 33%);
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <video autoplay controls loop>
+            <source src="./assets/video/technical-6133709.mp4" type="video/mp4">
+        </video>
+        <div class="fade"></div>
+        <div class="claim">
+            Mitt hus er rolig
+        </div>
+    </div>
+</body>
+</html>
